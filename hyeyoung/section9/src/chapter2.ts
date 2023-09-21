@@ -18,7 +18,9 @@ type B = ReturnType<FuncB>;  //never
 
 
 //함수 타입의 반환값 타입을 원함 -> B가 number이길 원했음 -> infer 이용
+//조건식을 참이 되도록 만들 수 있는 최적의 R 타입을 추론
 type ReturnType2<T> = T extends () => infer R ? R : never;
+
 type C = ReturnType2<FuncB>;  //number  R이 number로 추론됨
 
 type D = ReturnType2<number>;  //R추론 불가  -> never
