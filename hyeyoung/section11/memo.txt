@@ -1,0 +1,13 @@
+<타입 스크립트 리액트 시작하기>
+1. react 설치
+    npx create-react-app .
+2. 타입 선언 
+    npm i @types/node @types/react @types/react-dom @types/jest
+3. tsconfig.json 생성
+4. 모든 js -> jsx 
+5. 개별 하나씩 jsx -> tsx
+
+
+
+<상태관리와 Props 1>
+1. 에디터 기능 만들기 
